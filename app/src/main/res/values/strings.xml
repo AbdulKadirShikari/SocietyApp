@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Society App</string>
+    <string name="title_activity_society__dashboard_activity">Society_Dashboard_activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="Complain_Box">Complain Box</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">App Setting</string>
+    <string name="title_activity_all_events_tabbed">AllEventsTabbedActivity</string>
+    <string name="Past_Event">Upcoming Events</string>
+    <string name="Current_Event">Past Events</string>
+    <string name="Upcoming_Event">Current Event</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

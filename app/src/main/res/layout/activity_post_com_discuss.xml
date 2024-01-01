@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PostComDiscussActivty">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/postdiscussonAppbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/postdiscussontoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorAccent"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:layout_below="@+id/postdiscussonAppbar">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:padding="3dp"
+                android:id="@+id/staffuserpostId"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UserName"
+                android:layout_toRightOf="@id/staffuserpostId"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:textSize="16dp"
+                android:id="@+id/StaffnameDisplayId"/>
+
+            <Button
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:text="Share"
+                android:textColor="#ffffff"
+                android:background="@drawable/discuss_post_btn"
+                android:padding="4dp"
+                android:drawableRight="@drawable/ic_menu_send"
+                android:layout_below="@id/staffuserpostId"
+                android:layout_alignParentRight="true"
+                android:id="@+id/sharepostId"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Write your post.."
+                android:id="@+id/etPostdiscusslayoutId"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                app:boxStrokeColor="#46A8F7"
+                android:layout_below="@+id/sharepostId"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:gravity="left|top"
+                    android:inputType="textMultiLine|text"
+                    android:singleLine="true"
+                    android:id="@+id/etPostdiscussBoxId" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/choseshowimageId"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/etPostdiscusslayoutId"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Choose Photos"
+                    android:textColor="#ffffff"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    android:background="@drawable/discuss_post_btn"
+                    android:id="@+id/chosephotosendId"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+</RelativeLayout>

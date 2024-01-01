@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/topimagelinearId"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:layout_marginTop="-10dp"
+                android:layout_above="@+id/etlMobileLoginId"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/top_all_imgs" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom"
+                android:id="@+id/bottomloginlinearDesign"
+                android:layout_marginTop="8dp"
+                android:weightSum="5">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:background="#F51963"
+                    android:layout_weight="3"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:background="#2196F3"
+                    android:layout_weight="2"/>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:id="@+id/etlMobileLoginId"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:singleLine="true"
+                app:boxStrokeColor="#46A8F7"
+                app:boxBackgroundMode="outline"
+                android:layout_above="@+id/etlPasswordLoginId"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etMobileLoginId"
+                    android:drawableRight="@drawable/ic_users"
+                    android:inputType="textEmailAddress"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:id="@+id/etlPasswordLoginId"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="15dp"
+                android:singleLine="true"
+                app:boxStrokeColor="#46A8F7"
+                android:layout_above="@+id/btGoLoginId"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etPasswordLoginId"
+                    android:drawableRight="@drawable/ic_lock"
+                    android:inputType="textPassword"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:layout_above="@+id/bottomloginlinearDesign"
+                android:layout_marginTop="12dp"
+                android:gravity="end"
+                android:textColor="#2196F3"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/tvSignUpId"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't Have An Account ?"
+                android:layout_above="@id/bottomloginlinearDesign"
+                android:layout_toLeftOf="@id/tvSignUpId"
+                android:textAlignment="center"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/tvAlreadyId"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password ?"
+                android:layout_above="@+id/tvSignUpId"
+                android:textAlignment="inherit"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="18dp"
+                android:textStyle="bold"
+                android:gravity="end"
+                android:textColor="#2196F3"
+                android:textSize="12dp"
+                android:id="@+id/tvForgotpasswordId"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textSize="15dp"
+                android:background="#318ED6"
+                android:textColor="#ffffff"
+                android:id="@+id/btGoLoginId"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_above="@+id/tvForgotpasswordId"
+                android:layout_marginBottom="2dp"/>
+
+        </RelativeLayout>
+</RelativeLayout>

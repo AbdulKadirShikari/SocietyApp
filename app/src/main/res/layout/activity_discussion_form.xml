@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/slidingpanel"
+    android:layout_gravity="bottom"
+    android:background="@drawable/share_post"
+    app:umanoDragView="@id/dragview"
+    app:umanoPanelHeight="60dp"
+    app:umanoOverlay="false"
+    app:umanoParallaxOffset="100dp"
+    app:umanoShadowHeight="4dp"
+    app:umanoScrollableView="@id/rrScrollId"
+    android:gravity="bottom">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/discussonAppbar"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/discussontoolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorAccent"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/discussonAppbar"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/allpostDiscusSHowId" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/share_post"
+        android:id="@+id/dragview"
+        android:clickable="true"
+        android:focusable="false"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/relative"
+            android:background="#03A9F4">
+
+            <View
+                android:layout_width="70dp"
+                android:layout_height="2dp"
+                android:background="#DDDDDD"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:id="@+id/viewshareId"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:paddingStart="5dp"
+                android:paddingLeft="5dp"
+                android:id="@+id/ivarrowId"
+                android:src="@drawable/ic_right_arrow"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:id="@+id/tvshareyourpostId"
+                android:layout_centerInParent="true"
+                android:text="Share Your Post"></TextView>
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/share_post"
+        android:id="@+id/rrScrollId"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:padding="3dp"
+            android:id="@+id/staffuserpostId"
+            android:src="@drawable/ic_add_user" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UserName"
+            android:layout_toRightOf="@id/staffuserpostId"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textSize="16dp"
+            android:id="@+id/StaffnameDisplayId"/>
+
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:text="Share"
+            android:textColor="#ffffff"
+            android:background="@drawable/discuss_post_btn"
+            android:padding="4dp"
+            android:drawableRight="@drawable/ic_menu_send"
+            android:layout_below="@id/staffuserpostId"
+            android:layout_alignParentRight="true"
+            android:id="@+id/sharepostId"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Write your post.."
+            android:id="@+id/etPostdiscusslayoutId"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            app:boxStrokeColor="#46A8F7"
+            android:layout_below="@+id/sharepostId"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:gravity="left|top"
+                android:inputType="textMultiLine|text"
+                android:singleLine="true"
+                android:id="@+id/etPostdiscussBoxId" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_below="@+id/etPostdiscusslayoutId"
+    android:orientation="vertical">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:id="@+id/choseshowimageId" />
+</LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose Photos"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:padding="15dp"
+                android:background="@drawable/discuss_post_btn"
+                android:id="@+id/chosephotosendId"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    </LinearLayout>
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

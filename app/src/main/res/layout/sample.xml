@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Society_Registration">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_weight="2"
+                android:scaleType="fitXY"
+                android:layout_marginTop="-50dp"
+                android:id="@+id/topimagestaffregId"
+                android:src="@drawable/update_rpofile_top_back_img"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_add_user"
+                android:id="@+id/profileuserimageRegId"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:id="@+id/LinearAllTextFieldId"
+                android:layout_below="@+id/profileuserimageRegId"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_edit_profileId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Edit Profile"
+                    android:layout_gravity="center"
+                    android:layout_below="@+id/profileuserimageRegId"
+                    android:textColor="@color/blue"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/blue"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/ic_users"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="username"
+                            android:textStyle="bold"
+                            android:drawablePadding="5dp"
+                            android:layout_below="@+id/profileuserimageRegId"
+                            android:id="@+id/etlNameEditId"
+                            android:layout_margin="12dp"
+                            android:singleLine="true"
+                            android:textSize="16dp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="#E9E9E9"></View>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/blue"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/ic_email"></ImageView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Email"
+                            android:textStyle="bold"
+                            android:drawablePadding="5dp"
+                            android:layout_below="@+id/profileuserimageRegId"
+                            android:id="@+id/etlEmailEditId"
+                            android:layout_margin="12dp"
+                            android:singleLine="true"
+                            android:textSize="16dp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="#E9E9E9"></View>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/blue"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/ic_phone"></ImageView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Mobile"
+                            android:textStyle="bold"
+                            android:drawablePadding="5dp"
+                            android:layout_below="@+id/profileuserimageRegId"
+                            android:id="@+id/etlmobileEditId"
+                            android:layout_margin="12dp"
+                            android:singleLine="true"
+                            android:textSize="16dp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="#E9E9E9"></View>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/blue"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/apartments"></ImageView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Flat No"
+                            android:textStyle="bold"
+                            android:drawablePadding="5dp"
+                            android:layout_below="@+id/profileuserimageRegId"
+                            android:id="@+id/etlFlatnoEditId"
+                            android:layout_margin="12dp"
+                            android:singleLine="true"
+                            android:textSize="16dp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="#E9E9E9"></View>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/blue"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/route"></ImageView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Address"
+                            android:textStyle="bold"
+                            android:drawablePadding="5dp"
+                            android:layout_below="@+id/profileuserimageRegId"
+                            android:id="@+id/etlAddressEditId"
+                            android:layout_margin="12dp"
+                            android:singleLine="true"
+                            android:textSize="16dp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="#E9E9E9"></View>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/blue"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/ic_id_card"></ImageView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Adhar no"
+                            android:textStyle="bold"
+                            android:drawablePadding="5dp"
+                            android:layout_below="@+id/profileuserimageRegId"
+                            android:id="@+id/etlAdharEditId"
+                            android:layout_margin="12dp"
+                            android:singleLine="true"
+                            android:textSize="16dp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="#E9E9E9"></View>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:id="@+id/LinearEditFieldsId"
+                android:layout_below="@+id/profileuserimageRegId"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Your Name"
+                    android:id="@+id/etlNameRegisId"
+                    android:layout_margin="8dp"
+                    android:singleLine="true"
+                    app:boxStrokeColor="#46A8F7"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/etprofileuserNameRegId"
+                        android:drawableRight="@drawable/ic_users"
+                        android:inputType="text"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:layout_margin="8dp"
+                    android:id="@+id/etlemailRegisId"
+                    android:singleLine="true"
+                    app:boxStrokeColor="#46A8F7"
+                    android:layout_below="@+id/etlNameRegisId"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/etprofileEmailRegId"
+                        android:drawableRight="@drawable/ic_email"
+                        android:inputType="textEmailAddress"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile no."
+                    android:id="@+id/etlmobileRegisId"
+                    android:layout_margin="8dp"
+                    android:singleLine="true"
+                    app:boxStrokeColor="#46A8F7"
+                    android:layout_below="@+id/etlemailRegisId"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="10"
+                        android:id="@+id/etprofileMobileRegId"
+                        android:drawableRight="@drawable/ic_phone"
+                        android:inputType="number"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Flat no."
+                    android:id="@+id/etlFlatRegisId"
+                    android:layout_margin="8dp"
+                    android:singleLine="true"
+                    app:boxStrokeColor="#46A8F7"
+                    android:layout_below="@+id/etlmobileRegisId"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/etprofileFlatNoRegId"
+                        android:drawableRight="@drawable/apartments"
+                        android:inputType="text"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Address"
+                    android:id="@+id/etlAddressRegisId"
+                    android:layout_margin="8dp"
+                    android:singleLine="true"
+                    app:boxStrokeColor="#46A8F7"
+                    android:layout_below="@+id/etlFlatRegisId"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/etprofileAddressRegId"
+                        android:drawableRight="@drawable/route"
+                        android:inputType="text"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Adhar Card no."
+                    android:id="@+id/etlAdharCardRegisId"
+                    android:layout_margin="8dp"
+                    android:singleLine="true"
+                    app:boxStrokeColor="#46A8F7"
+                    android:layout_below="@+id/etlAddressRegisId"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/etprofileAdharCardId"
+                        android:maxLength="16"
+                        android:drawableRight="@drawable/ic_id_card"
+                        android:inputType="number"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Update"
+                    android:background="#318ED6"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#ffffff"
+                    android:id="@+id/btupdate_ProfileId"
+                    android:layout_below="@id/etlAdharCardRegisId"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="5">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:background="#F51963"
+                    android:layout_weight="3"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:background="#2196F3"
+                    android:layout_weight="2"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

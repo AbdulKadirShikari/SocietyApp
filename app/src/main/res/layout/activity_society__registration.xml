@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Society_Registration">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:id="@+id/relativeTopBckId"
+                android:background="@drawable/update_rpofile_top_back_img">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Up"
+                    android:textStyle="bold"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center_horizontal"
+                    android:textSize="22dp"
+                    android:textColor="#ffffff"></TextView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/left_arrow"
+                android:id="@+id/regleftarrowId"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"></ImageView>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/regleftarrowId"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="145dp"
+        android:src="@drawable/arrow"></ImageView>
+</LinearLayout>
+
+            </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/relativeTopBckId"
+            android:padding="3dp"
+            android:layout_marginTop="-41dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_add_user"
+            android:id="@+id/userimageRegId"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your Name"
+                android:id="@+id/etlNameRegisId"
+                android:layout_margin="10dp"
+                android:singleLine="true"
+                app:boxStrokeColor="#46A8F7"
+                android:layout_below="@+id/userimageRegId"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etuserNameRegId"
+                    android:drawableRight="@drawable/ic_users"
+                    android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:id="@+id/etlpasswordRegisId"
+                android:layout_margin="10dp"
+                android:singleLine="true"
+                app:boxStrokeColor="#46A8F7"
+                android:layout_below="@+id/etlNameRegisId"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etPasswordRegId"
+                    android:drawableRight="@drawable/ic_lock"
+                    android:inputType="textPassword"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:layout_margin="10dp"
+                android:id="@+id/etlemailRegisId"
+                android:singleLine="true"
+                app:boxStrokeColor="#46A8F7"
+                android:layout_below="@+id/etlpasswordRegisId"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etEmailRegId"
+                    android:drawableRight="@drawable/ic_email"
+                    android:inputType="textEmailAddress"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile no."
+                android:id="@+id/etlmobileRegisId"
+                android:layout_margin="10dp"
+                android:singleLine="true"
+                app:boxStrokeColor="#46A8F7"
+                android:layout_below="@+id/etlemailRegisId"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="10"
+                    android:id="@+id/etMobileRegId"
+                    android:drawableRight="@drawable/ic_phone"
+                    android:inputType="number"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Flat no."
+                android:id="@+id/etlFlatRegisId"
+                android:layout_margin="10dp"
+                android:singleLine="true"
+                app:boxStrokeColor="#46A8F7"
+                android:layout_below="@+id/etlmobileRegisId"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etFlatNoRegId"
+                    android:drawableRight="@drawable/apartments"
+                    android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:id="@+id/etlAddressRegisId"
+                android:layout_margin="10dp"
+                android:singleLine="true"
+                app:boxStrokeColor="#46A8F7"
+                android:layout_below="@+id/etlFlatRegisId"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etAddressRegId"
+                    android:drawableRight="@drawable/route"
+                    android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Adhar Card no."
+                android:id="@+id/etlAdharCardRegisId"
+                android:layout_margin="10dp"
+                android:singleLine="true"
+                app:boxStrokeColor="#46A8F7"
+                android:layout_below="@+id/etlAddressRegisId"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etAdharCardId"
+                    android:maxLength="16"
+                    android:drawableRight="@drawable/ic_id_card"
+                    android:inputType="number"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_design"
+                android:id="@+id/linearsocietyNamespinnerId"
+                android:layout_below="@+id/etlAdharCardRegisId"
+                android:layout_margin="10dp">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown"
+                    android:id="@+id/spinnersocietyNameId" />
+            </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:background="#318ED6"
+        android:textColor="#ffffff"
+        android:id="@+id/btRegistrationId"
+        android:layout_below="@id/linearsocietyNamespinnerId"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_below="@id/btRegistrationId"
+        android:layout_marginTop="20dp"
+        android:gravity="end"
+        android:textColor="#2196F3"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/tvSignInId"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Have an account ?"
+                android:layout_below="@id/btRegistrationId"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toLeftOf="@id/tvSignInId"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:id="@+id/tvAlreadyId"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="5">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:background="#F51963"
+                    android:layout_weight="3"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:background="#2196F3"
+                    android:layout_weight="2"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/blackcurvedbackground"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/firsrRow"
+        android:layout_margin="10dp"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/layoutcomplainId"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="90dp"
+                app:cardCornerRadius="8dp"
+                android:layout_height="90dp">
+
+                <ImageView
+                    android:id="@+id/imageserviceproviderId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="14dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_complain"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Complain"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:id="@+id/textcomplainId"
+                android:textSize="15dp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/layoutdiscussId"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="90dp"
+                app:cardCornerRadius="8dp"
+                android:layout_height="90dp">
+
+                <ImageView
+                    android:id="@+id/imgDiscussionId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="14dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_discussion"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discussion"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:id="@+id/tvdiscussId"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/layouteventId"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="90dp"
+                app:cardCornerRadius="8dp"
+                android:layout_height="90dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgeventId"
+                    android:padding="14dp"
+                    android:src="@drawable/ic_circus"></ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:id="@+id/tveventId"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/secondRow"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/firsrRow"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/layouthelpId"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="90dp"
+                app:cardCornerRadius="8dp"
+                android:layout_height="90dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imghelpId"
+                    android:padding="14dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_help_desk"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HelpDisk"
+                android:textAlignment="center"
+                android:id="@+id/tvhelpId"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/layoutmaintainceId"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="90dp"
+                app:cardCornerRadius="8dp"
+                android:layout_height="90dp">
+
+                <ImageView
+                    android:id="@+id/imgmaintainceId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="14dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_maintenance"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maintaince"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:id="@+id/tvmaintainceId"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/layoutmemberId"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="90dp"
+                app:cardCornerRadius="8dp"
+                android:layout_height="90dp">
+
+                <ImageView
+                    android:id="@+id/imagestaffmemberId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="14dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_member"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Member"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:id="@+id/textstaffmemberId"
+                android:textColor="#000000"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/thirdRow"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/secondRow"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:id="@+id/layoutnoticeId"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="90dp"
+                app:cardCornerRadius="8dp"
+                android:layout_height="90dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgnoticeId"
+                    android:padding="14dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_announcement"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notice"
+                android:id="@+id/tvnoticeId"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/layoutrilesId"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="90dp"
+                app:cardCornerRadius="8dp"
+                android:layout_height="90dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgrulesId"
+                    android:layout_gravity="center"
+                    android:padding="14dp"
+                    android:src="@drawable/ic_rules"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rules"
+                android:textAlignment="center"
+                android:id="@+id/tvruleId"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="90dp"
+                app:cardCornerRadius="8dp"
+                android:layout_height="90dp">
+
+                <ImageView
+                    android:id="@+id/imageservicememberId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="14dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_customer_service"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Service"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:id="@+id/textserviceId"
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="261dp"
+            android:layout_marginTop="20dp"
+            android:gravity="end|bottom"
+            android:orientation="vertical">
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                tools:ignore="MissingConstraints">
+
+
+            </androidx.viewpager.widget.ViewPager>
+
+            <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
+                android:id="@+id/spring_dots_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:dampingRatio="0.8"
+                app:dotsColor="@android:color/black"
+                app:dotsCornerRadius="8dp"
+                app:dotsSize="12dp"
+                android:layout_marginBottom="5dp"
+                app:dotsSpacing="4dp"
+                app:dotsStrokeColor="@android:color/holo_blue_bright"
+                app:dotsStrokeWidth="2dp"
+                app:stiffness="300" />
+
+        </LinearLayout>
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<network-security-config>
+<domain-config cleartextTrafficPermitted="true">
+
+    <domain includeSubdomains="true">placementsadda.com</domain>
+
+</domain-config>
+</network-security-config>
